@@ -1,53 +1,24 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
-#Feature: List of scenarios.
-#Scenario: Business rule through list of steps with arguments.
-#Given: Some precondition step
-#When: Some key actions
-#Then: To observe outcomes or validation
-#And,But: To enumerate more Given,When,Then steps
-#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
-#Examples: Container for s table
-#Background: List of steps run before each of the scenarios
-#""" (Doc Strings)
-#| (Data Tables)
-#@ (Tags/Labels):To group Scenarios
-#<> (placeholder)
-#""
-## (Comments)
-#Sample Feature Definition Template
-#@tag
 Feature: add property feature
  
-  
-    
     Background: Verify sign in page 
-    #Scenario: Verify sign in page
     Given admin is on Real Estate website
     Then admin clicks on login
     Then admin enters username "amit92luthra" and password "admin@987654321"
     And clicks on Sign in button
     #Then admin navigates to dashboard
     And admin hovers on Properties then clciks on Add New field 
-    #And selects Add new field
-    #Then admin navigates to add new property field
     
-   
-      
-     
-     
-     
-     Scenario Outline: Verify Add property Field-Auto
+    Scenario Outline: Verify Add property Field-Auto
       Given admin is on add new page
       And clicks on enter title here "<title>"
       When url is generated
-      Then admin clicks on Publish button
+      
       Examples:
       
       | title             |
       | neral_2           |
-      #| neral@city123     |
-      #|                   |
+      | neral@city123     |
+      |                   |
       
       
       Scenario: Verify Add Media  
@@ -77,7 +48,7 @@ Feature: add property feature
       
       Examples:
       | title | area        | description     |
-      | hall  | 690 sq.feet | Glimpse of hall |    
+      | hall  | 690 sq.feet | Glimpse of hall! |    
       
       Scenario Outline: Verify Add another floorplan
       
@@ -159,22 +130,7 @@ Feature: add property feature
       | title          |
       | Mumbai_@_launch | 
       
-      Scenario Outline: Bug-After entering title and hitting ENTER  key property get published automatically
-      Given admin is on Add New Property Page
-      And enters "<title>" in Title Box and hits enter
-      Then property gets published automatically
       
-      Examples:
-      | title             |
-      | Mumbai_Launch_123 |
-      
-      Scenario Outline: Bug- Null value is getting accepted
-       When admin enters "<title>" and hits Enter key
-       Then admin cann preview the post
-       
-       Examples:
-       | title|
-       |      |
        
        
       

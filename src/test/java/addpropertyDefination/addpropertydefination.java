@@ -19,13 +19,32 @@ public class addpropertydefination {
 	WebDriver driver = addpropertyannotation .driver;
 	@Given("admin is on Real Estate website")
 	public void admin_is_on_Real_Estate_website() {
+		try {
+			String title = driver.getTitle();
+			System.out.println(title);
+			
+		
 		System.out.println("You are on real estate website");
+		}
+		catch(Exception e)
+		{
+			System.out.println("Not able to get title of Real Estate website "+e);
+		}
 	    
 	}
 	@And("admin clicks on login")
 	public void admin_clicks_on_login() {
+		try
+		{
 	    driver.findElement(By.xpath("//*[@class='sign-in']")).click();
-	}
+	    
+		}
+		catch(Exception e)
+		{
+			System.out.println("Admin is unable to login icon" +e);
+		}
+		}
+	
 
 	@When("admin enters username {string} and password {string}")
 	public void admin_enters_username_and_password(String username, String password) {
@@ -35,7 +54,7 @@ public class addpropertydefination {
 		}
 		catch (Exception e)
 		{
-			System.out.println("Mot able to enter credentials"+e);
+			System.out.println("Not able to enter credentials"+e);
 		}
 	    
 	}
@@ -55,9 +74,9 @@ public class addpropertydefination {
 	@Then("admin navigates to dashboard")
 	public void admin_navigates_to_dashboard() {
 		try {
-			driver.findElement(By.xpath("//h1[text()='Dashboard']")).isDisplayed();
+			boolean b = driver.findElement(By.xpath("//h1[text()='Dashboard']")).isDisplayed();
 			Thread.sleep(2000);
-			System.out.println("Admin is on dashboard page");
+			System.out.println("Admin is on dashboard page: "+b);
 		
 		}
 		catch (Exception e)
@@ -85,52 +104,21 @@ public class addpropertydefination {
 		}
 	    
 	}
-	/*@Then("slects Add new field")
-	public void slects_Add_new_field() {
-		try {
-			WebElement AddNew = driver.findElement(By.xpath("//a[@href='post-new.php?post_type=property']"));
-			Actions actions = new Actions(driver);
-			actions.moveToElement(AddNew);
-			actions.build();
-			actions.perform();
-		}
-		catch (Exception e)
-		{
-			System.out.println("not able to select new field" +e);
-		}
-	}*/
+	
 
-	/*@And("clicks on properties field")
-	public void clicks_on_properties_field() {
-		try {
-			driver.findElement(By.xpath("//*[text()='Properties']")).click();
-		}
-		catch (Exception e){
-			System.out.println("Not able to click on properties" +e);
-		}
-	    
-	}
 
-	@And("selects Add new field")
-	public void selects_Add_new_field() {
-		try {
-			driver.findElement(By.xpath("//a[@href=\"post-new.php?post_type=property\"]")).click();
-		}
-		catch (Exception e)
-		{
-			System.out.println("not able to select new field" +e);
-		}
-	    
-	}*/
-
-	/*@Then("admin navigates to add new property field")
-	public void admin_navigates_to_add_new_property_field() {
-		System.out.println("Admin is on add new property page");
-	   
-	}*/
 	@And("admin is on add new page")
 	public void admin_is_on_add_new_page() {
-		System.out.println("Admin is on addnew page");
+		try 
+		{
+			boolean check = driver.findElement(By.xpath("//*[@id='wpbody-content']/div[3]/h1")).isDisplayed();
+	
+		System.out.println("Admin is on add new page " +check);
+		}
+		catch (Exception e)
+		{
+			System.out.println("Admin is not on Add new Page! "+e);
+		}
 	    
 	}
 
@@ -152,10 +140,18 @@ public class addpropertydefination {
 
     @Then("url is generated")
 	public void url_is_generated() {
-		System.out.println("Done");
+    	try {
+    		boolean check1 = driver.findElement(By.xpath("//strong[normalize-space()='Permalink:']")).isDisplayed();
+    		
+		System.out.println("Done "+check1);
+    	}
+    	catch(Exception e)
+    	{
+    		System.out.println("URL is not present! "+e);
+    	}
 		
 	}
-    @Then("admin clicks on Publish button")
+   /* @Then("admin clicks on Publish button")
 	public void admin_clicks_on_Publish_button() {
 	    try {
 	    	//System.out.println(driver.findElement(By.xpath("//*[@id='submitdiv']/button")));
@@ -167,12 +163,20 @@ public class addpropertydefination {
 	    {
     	System.out.println("Not able to click on publish button"+e);
 	    }
-    }
+    }*/
     
    @Then("admin clicks on Visual button")
     public void admin_clicks_on_Visual_button() {
+	   try 
+	   {
        driver.findElement(By.cssSelector("#content-tmce")).click();
     }
+	   catch (Exception e)
+	   {
+		   System.out.println("Admin is not able to clcik on Visual! "+e);
+	   }
+	   }
+   
 	
 	@And("admin clicks on add media button")
 	public void admin_clicks_on_add_media_button() {
@@ -240,12 +244,6 @@ public class addpropertydefination {
 
 	
 
-	@Then("admin clicks on All dates")
-	public void admin_clicks_on_All_dates() {
-		System.out.println("Admin clicks on all dates");
-	    
-	}
-
 	@Then("selects required date")
 	public void selects_required_date() throws InterruptedException{
 		try {
@@ -253,7 +251,7 @@ public class addpropertydefination {
 		Thread.sleep(3000);
 		date1.selectByVisibleText("All dates");
 		Thread.sleep(3000);
-		System.out.println("User can select the date,yes!");
+		System.out.println("Admin can select the date,yes!");
 		}
 		catch (Exception e)
 		{
@@ -271,7 +269,7 @@ public class addpropertydefination {
 		}
 			catch (Exception e)
 			{
-				System.out.println("Admin is not able to click on close"+e);
+				System.out.println("Admin is not able to click on close icon "+e);
 				
 			}
 			
@@ -486,13 +484,6 @@ public class addpropertydefination {
 			}
 		    
 		}
-
-		@Then("checkbox is selected")
-		public void checkbox_is_selected() {
-			System.out.println("Selected checkbox");
-		   
-		}
-		
 		
 		
 		@When("admin clicks on Screen Options")
@@ -751,7 +742,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 				Thread.sleep(3000);
 				System.out.println("draft selected");
 				select.selectByValue("pending");
-				System.out.println("dropdown is clicked");
+				System.out.println("pending is clicked");
 				Thread.sleep(5000);
 				
 				//Select s1 = new Select(driver.findElement(By.xpath("//*[@id='post_status']/option[1]")));
@@ -805,7 +796,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    	
 		    	radio2.click();
 		    	Thread.sleep(3000);
-		    	System.out.println("Public radio button is selected");
+		    	System.out.println("Public Radio Button is selected");
 		    }
 		    catch(Exception e)
 		    {
@@ -883,7 +874,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			}
 			catch (Exception e)
 			{
-				System.out.println("Admin can not click on edit-publish"+e);
+				System.out.println("Admin can not click on edit of publish option"+e);
 				Assert.fail();
 			}
 		    
@@ -1244,93 +1235,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    
 		}
 		
-		@Given("admin is on Add New Property Page")
-		public void admin_is_on_Add_New_Property_Page() {
-			try {
-				boolean t2 = driver.findElement(By.xpath("//h1[@class='wp-heading-inline']")).isDisplayed();
-				
-				
-		    System.out.println("Admin is on Add New Page " +t2);
-			}
-			catch (Exception e)
-			{
-				System.out.println("Admin is not on Add New Page! "+e);
-			}
-		    
-		}
-
-		@Given("enters {string} in Title Box and hits enter")
-		public void enters_in_Title_Box_and_hits_enter(String title) {
-			try
-			{
-				WebElement obj = driver.findElement(By.name("post_title"));
-				obj.sendKeys(title);
-				Thread.sleep(3000);
-				System.out.println(title);
-				
-			}
-			catch (Exception e)
-			{
-				System.out.println("Admin is not able to enter title "+e);
-				
-			}
-		    
-		}
 		
-
-		@Then("property gets published automatically")
-		public void property_gets_published_automatically() {
-			
-			try
-			{
-				boolean message1= driver.findElement(By.xpath("//a[contains(text(),'Preview post')]")).isDisplayed();
-				System.out.println("preview post link is displayed"+message1);
-				Assert.fail();
-				
-			}
-			catch (Exception e)
-			{
-				System.out.println("OOps can't see verification meassage"+e);
-			}
-		    
-		}
-		
-		@When("admin enters {string} and hits Enter key")
-		public void admin_enters_and_hits_Enter_key(String title) {
-			try
-			{
-				WebElement obj = driver.findElement(By.name("post_title"));
-				obj.sendKeys(title);
-				Thread.sleep(3000);
-				System.out.println(title);
-				
-			}
-			catch (Exception e)
-			{
-				System.out.println("Admin is not able to enter title "+e);
-				
-			}
-			
-		    
-		}
-
-		
-
-		@Then("admin cann preview the post")
-		public void admin_cann_preview_the_post() {
-			try
-			{
-				boolean message1= driver.findElement(By.xpath("//a[contains(text(),'Preview post')]")).isDisplayed();
-				System.out.println("preview post link is displayed"+message1);
-				Assert.fail();
-				
-			}
-			catch (Exception e)
-			{
-				System.out.println("OOps can't see verification meassage"+e);
-			}
-		   
-		}
 
 		
 
