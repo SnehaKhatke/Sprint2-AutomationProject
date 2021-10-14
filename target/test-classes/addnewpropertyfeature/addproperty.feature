@@ -2,16 +2,16 @@ Feature: add property feature
  
     Background: Verify sign in page 
     Given admin is on Real Estate website
-    Then admin clicks on login
-    Then admin enters username "amit92luthra" and password "admin@987654321"
+    And admin clicks on login
+    And admin enters username "amit92luthra" and password "admin@987654321"
     And clicks on Sign in button
     #Then admin navigates to dashboard
-    And admin hovers on Properties then clciks on Add New field 
+    Then admin hovers on Properties then clciks on Add New field 
     
     Scenario Outline: Verify Add property Field-Auto
       Given admin is on add new page
       And clicks on enter title here "<title>"
-      When url is generated
+      Then url is generated
       
       Examples:
       
@@ -22,19 +22,18 @@ Feature: add property feature
       
       
       Scenario: Verify Add Media  
-      Then admin clicks on Visual button
+      When admin clicks on Visual button
       And admin clicks on add media button
       Then Media pop up gets display
       And admin clicks on upload files
-      Then admin click on media library
-      Then admin selects all media items drop down menu
-      Then admin clicks on All dates
+      And admin click on media library
+      And admin selects all media items drop down menu
       And selects required date
       #And admin verifies image
       #Then image is dispayed
       #Then click on Insert post
       #And image is displayed on given box
-      And admin clicks on close button
+      Then admin clicks on close button
       
       
       
