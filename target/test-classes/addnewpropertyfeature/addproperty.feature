@@ -1,27 +1,30 @@
 Feature: add property feature
- 
+
+    
     Background: Verify sign in page 
     Given admin is on Real Estate website
     And admin clicks on login
-    And admin enters username "amit92luthra" and password "admin@987654321"
+    And admin enters username "mohankrishna176@gmail.com" and password "Secret@123&&"
     And clicks on Sign in button
-    #Then admin navigates to dashboard
-    Then admin hovers on Properties then clciks on Add New field 
+    Then admin navigates to dashboard
+    And admin hovers on Properties then clciks on Add New field 
     
+    @tag1
     Scenario Outline: Verify Add property Field-Auto
       Given admin is on add new page
       And clicks on enter title here "<title>"
-      Then url is generated
+      And url is generated
+      Then after hitting Enter post gets published automatically
       
       Examples:
       
-      | title             |
-      | neral_2           |
-      | neral@city123     |
-      |                   |
+      | title              |
+      | neral_2#           |
+      | neral@city_123     |
+      |                    |
       
-      
-      Scenario: Verify Add Media  
+      @tag2
+      Scenario: Verify Add Media field
       When admin clicks on Visual button
       And admin clicks on add media button
       Then Media pop up gets display
@@ -33,14 +36,13 @@ Feature: add property feature
       #Then image is dispayed
       #Then click on Insert post
       #And image is displayed on given box
-      Then admin clicks on close button
+      And admin clicks on close button
+      Then admin is back on same page
       
       
-      
-      
+      @tag3
       Scenario Outline: Verify floorplans
       When admin clicks on floorplans
-      Then Floorplans field is visible
       Then admin enters "<title>", "<area>", "<description>"
       
       
@@ -49,26 +51,29 @@ Feature: add property feature
       | title | area        | description     |
       | hall  | 690 sq.feet | Glimpse of hall! |    
       
+      @tag4
       Scenario Outline: Verify Add another floorplan
       
-      Then admin clicks on add another editor
+      When admin clicks on add another editor
       And enters "<title>", "<area>", "<description>"
-      Then removes that added editor
+      Then removes previous editor
       
       Examples:
-      | title    | area        | description        |
-      | balcony  | 690 sq.feet | Glimpse of balcony |
+      | title         | area        | description                    |
+      | balcony_view  | 690 sq.feet | Glimpse of balcony_@mumbai_view|
       
+      @tag5
       Scenario: Verify Author field
       
       When admin selects dropdown menu
       Then admin selects  author name
       
-      Scenario: To verify Discussion feild
+      @tag6
+      Scenario: To verify Discussion field
       When admin selects checkbox of discussion
       Then checkbox is selected
       
-      
+      @tag7
       Scenario: Automated Verification of Screen Option
       When admin clicks on Screen Options
       Then admin should see all screen options
@@ -78,7 +83,8 @@ Feature: add property feature
       And admin selects checkbox
       Then Admin verifies changes are made or not
       
-      Scenario Outline: Automated verification of Publish field and Update Button
+      @tag8
+      Scenario Outline: Automated verification of Publish field and Update button
       Given admin is on Add New page
       And admin enters title of property "<title>"
       And admin enters text in given field "<text>"
@@ -96,9 +102,9 @@ Feature: add property feature
       And admin selects month from dropdown
       And admin enters "<date>", "<year>"
       And clicks on OK 
-      And verifies displayed message
       And admin clicks on Main Publish button
-      Then clicks on View_Post
+      Then verifies displayed message
+      And clicks on View_Post
       And admin navigates to post
       And admin navigates to previous page
       And deletes a letter from title
@@ -106,14 +112,16 @@ Feature: add property feature
       Then clicks on view post
       And navigates to post
       And Navigates back on previous page
-      And clciks on Add New button
+      And click on Add New button
       Then admin verifies title field to add new property
       
       Examples:
       
       | title            | text             | date | year |
-      | New_launch_View_1|   New Property   | 14   | 2021 |
+      | New_launch_View_1| Property   | 18   | 2021 |
       
+      
+      @tag8
       Scenario Outline: Automated verification move to trash link
       Given admin is on Properties Add New page
       And admin enters "<title>"

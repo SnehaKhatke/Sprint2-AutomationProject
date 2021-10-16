@@ -1,9 +1,9 @@
 [
   {
-    "line": 20,
+    "line": 1,
     "elements": [
       {
-        "line": 24,
+        "line": 4,
         "name": "Verify sign in page",
         "description": "",
         "type": "background",
@@ -11,10 +11,10 @@
         "steps": [
           {
             "result": {
-              "duration": 201600,
+              "duration": 82700,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 5,
             "name": "admin is on Real Estate website",
             "match": {
               "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
@@ -23,44 +23,44 @@
           },
           {
             "result": {
-              "duration": 11600,
+              "duration": 28300,
               "status": "skipped"
             },
-            "line": 27,
+            "line": 6,
             "name": "admin clicks on login",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_login()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 15600,
+              "duration": 9300,
               "status": "skipped"
             },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"amit92luthra\"",
+                  "val": "\"mohankrishna176@gmail.com\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
                 }
               ],
               "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 13600,
+              "duration": 6100,
               "status": "skipped"
             },
-            "line": 29,
+            "line": 8,
             "name": "clicks on Sign in button",
             "match": {
               "location": "addpropertydefination.clicks_on_Sign_in_button()"
@@ -69,10 +69,22 @@
           },
           {
             "result": {
-              "duration": 8500,
+              "duration": 11600,
               "status": "skipped"
             },
-            "line": 31,
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 10,
             "name": "admin hovers on Properties then clciks on Add New field",
             "match": {
               "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
@@ -82,11 +94,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-14T12:17:01.946Z",
+        "start_timestamp": "2021-10-16T15:33:58.157Z",
         "before": [
           {
             "result": {
-              "duration": 810000,
+              "duration": 1040300,
               "status": "skipped"
             },
             "match": {
@@ -94,14 +106,14 @@
             }
           }
         ],
-        "line": 48,
+        "line": 22,
         "name": "Verify Add property Field-Auto",
         "description": "",
         "id": "add-property-feature;verify-add-property-field-auto;;2",
         "after": [
           {
             "result": {
-              "duration": 13500,
+              "duration": 7500,
               "status": "skipped"
             },
             "match": {
@@ -114,10 +126,10 @@
         "steps": [
           {
             "result": {
-              "duration": 11600,
+              "duration": 5500,
               "status": "skipped"
             },
-            "line": 41,
+            "line": 14,
             "name": "admin is on add new page",
             "match": {
               "location": "addpropertydefination.admin_is_on_add_new_page()"
@@ -126,15 +138,15 @@
           },
           {
             "result": {
-              "duration": 14600,
+              "duration": 5400,
               "status": "skipped"
             },
-            "line": 42,
-            "name": "clicks on enter title here \"neral_2\"",
+            "line": 15,
+            "name": "clicks on enter title here \"neral_2#\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"neral_2\"",
+                  "val": "\"neral_2#\"",
                   "offset": 27
                 }
               ],
@@ -144,32 +156,37 @@
           },
           {
             "result": {
-              "duration": 14600,
+              "duration": 8700,
               "status": "skipped"
             },
-            "line": 43,
+            "line": 16,
             "name": "url is generated",
             "match": {
               "location": "addpropertydefination.url_is_generated()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 14500,
+              "duration": 11000,
               "status": "skipped"
             },
-            "line": 44,
-            "name": "admin clicks on Publish button",
+            "line": 17,
+            "name": "after hitting Enter post gets published automatically",
             "match": {
-              "location": "addpropertydefination.admin_clicks_on_Publish_button()"
+              "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
           }
         ]
       },
       {
-        "line": 24,
+        "line": 4,
         "name": "Verify sign in page",
         "description": "",
         "type": "background",
@@ -177,10 +194,10 @@
         "steps": [
           {
             "result": {
-              "duration": 11200,
+              "duration": 8300,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 5,
             "name": "admin is on Real Estate website",
             "match": {
               "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
@@ -189,44 +206,44 @@
           },
           {
             "result": {
-              "duration": 6900,
+              "duration": 8100,
               "status": "skipped"
             },
-            "line": 27,
+            "line": 6,
             "name": "admin clicks on login",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_login()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5900,
+              "duration": 6800,
               "status": "skipped"
             },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"amit92luthra\"",
+                  "val": "\"mohankrishna176@gmail.com\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
                 }
               ],
               "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5400,
+              "duration": 7600,
               "status": "skipped"
             },
-            "line": 29,
+            "line": 8,
             "name": "clicks on Sign in button",
             "match": {
               "location": "addpropertydefination.clicks_on_Sign_in_button()"
@@ -235,10 +252,22 @@
           },
           {
             "result": {
-              "duration": 5300,
+              "duration": 25900,
               "status": "skipped"
             },
-            "line": 31,
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 10,
             "name": "admin hovers on Properties then clciks on Add New field",
             "match": {
               "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
@@ -248,11 +277,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-14T12:17:01.971Z",
+        "start_timestamp": "2021-10-16T15:33:58.185Z",
         "before": [
           {
             "result": {
-              "duration": 11000,
+              "duration": 9800,
               "status": "skipped"
             },
             "match": {
@@ -260,14 +289,380 @@
             }
           }
         ],
-        "line": 53,
-        "name": "Verify Add Media",
+        "line": 23,
+        "name": "Verify Add property Field-Auto",
         "description": "",
-        "id": "add-property-feature;verify-add-media",
+        "id": "add-property-feature;verify-add-property-field-auto;;3",
         "after": [
           {
             "result": {
-              "duration": 7100,
+              "duration": 4700,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "admin is on add new page",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_add_new_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "clicks on enter title here \"neral@city_123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"neral@city_123\"",
+                  "offset": 27
+                }
+              ],
+              "location": "addpropertydefination.clicks_on_enter_title_here(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5400,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "url is generated",
+            "match": {
+              "location": "addpropertydefination.url_is_generated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5300,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "after hitting Enter post gets published automatically",
+            "match": {
+              "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6800,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5400,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.200Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6800,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verify Add property Field-Auto",
+        "description": "",
+        "id": "add-property-feature;verify-add-property-field-auto;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 6900,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "admin is on add new page",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_add_new_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13400,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "clicks on enter title here \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 27
+                }
+              ],
+              "location": "addpropertydefination.clicks_on_enter_title_here(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "url is generated",
+            "match": {
+              "location": "addpropertydefination.url_is_generated()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "after hitting Enter post gets published automatically",
+            "match": {
+              "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag1"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12900,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11800,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13400,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.203Z",
+        "before": [
+          {
+            "result": {
+              "duration": 16400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify Add Media field",
+        "description": "",
+        "id": "add-property-feature;verify-add-media-field",
+        "after": [
+          {
+            "result": {
+              "duration": 6200,
               "status": "skipped"
             },
             "match": {
@@ -280,22 +675,22 @@
         "steps": [
           {
             "result": {
-              "duration": 5200,
+              "duration": 13700,
               "status": "skipped"
             },
-            "line": 54,
+            "line": 28,
             "name": "admin clicks on Visual button",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_Visual_button()"
             },
-            "keyword": "Then "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 11600,
+              "duration": 13200,
               "status": "skipped"
             },
-            "line": 55,
+            "line": 29,
             "name": "admin clicks on add media button",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_add_media_button()"
@@ -304,10 +699,10 @@
           },
           {
             "result": {
-              "duration": 7900,
+              "duration": 13100,
               "status": "skipped"
             },
-            "line": 56,
+            "line": 30,
             "name": "Media pop up gets display",
             "match": {
               "location": "addpropertydefination.media_pop_up_gets_display()"
@@ -316,10 +711,10 @@
           },
           {
             "result": {
-              "duration": 7500,
+              "duration": 13500,
               "status": "skipped"
             },
-            "line": 57,
+            "line": 31,
             "name": "admin clicks on upload files",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_upload_files()"
@@ -328,46 +723,34 @@
           },
           {
             "result": {
-              "duration": 7800,
+              "duration": 13200,
               "status": "skipped"
             },
-            "line": 58,
+            "line": 32,
             "name": "admin click on media library",
             "match": {
               "location": "addpropertydefination.admin_click_on_media_library()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 7800,
+              "duration": 13300,
               "status": "skipped"
             },
-            "line": 59,
+            "line": 33,
             "name": "admin selects all media items drop down menu",
             "match": {
               "location": "addpropertydefination.admin_selects_all_media_items_drop_down_menu()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 7900,
+              "duration": 8100,
               "status": "skipped"
             },
-            "line": 60,
-            "name": "admin clicks on All dates",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_All_dates()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7400,
-              "status": "skipped"
-            },
-            "line": 61,
+            "line": 34,
             "name": "selects required date",
             "match": {
               "location": "addpropertydefination.selects_required_date()"
@@ -376,20 +759,37 @@
           },
           {
             "result": {
-              "duration": 7600,
+              "duration": 7900,
               "status": "skipped"
             },
-            "line": 66,
+            "line": 39,
             "name": "admin clicks on close button",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_close_button()"
             },
             "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7000,
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": "admin is back on same page",
+            "match": {
+              "location": "addpropertydefination.admin_is_back_on_same_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag2"
           }
         ]
       },
       {
-        "line": 24,
+        "line": 4,
         "name": "Verify sign in page",
         "description": "",
         "type": "background",
@@ -397,10 +797,10 @@
         "steps": [
           {
             "result": {
-              "duration": 9200,
+              "duration": 10200,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 5,
             "name": "admin is on Real Estate website",
             "match": {
               "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
@@ -409,44 +809,44 @@
           },
           {
             "result": {
-              "duration": 9000,
+              "duration": 7300,
               "status": "skipped"
             },
-            "line": 27,
+            "line": 6,
             "name": "admin clicks on login",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_login()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 8700,
+              "duration": 6400,
               "status": "skipped"
             },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"amit92luthra\"",
+                  "val": "\"mohankrishna176@gmail.com\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
                 }
               ],
               "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 8600,
+              "duration": 5600,
               "status": "skipped"
             },
-            "line": 29,
+            "line": 8,
             "name": "clicks on Sign in button",
             "match": {
               "location": "addpropertydefination.clicks_on_Sign_in_button()"
@@ -455,10 +855,22 @@
           },
           {
             "result": {
-              "duration": 8300,
+              "duration": 8900,
               "status": "skipped"
             },
-            "line": 31,
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10700,
+              "status": "skipped"
+            },
+            "line": 10,
             "name": "admin hovers on Properties then clciks on Add New field",
             "match": {
               "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
@@ -468,11 +880,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-14T12:17:01.980Z",
+        "start_timestamp": "2021-10-16T15:33:58.207Z",
         "before": [
           {
             "result": {
-              "duration": 11400,
+              "duration": 10800,
               "status": "skipped"
             },
             "match": {
@@ -480,14 +892,14 @@
             }
           }
         ],
-        "line": 80,
+        "line": 52,
         "name": "Verify floorplans",
         "description": "",
         "id": "add-property-feature;verify-floorplans;;2",
         "after": [
           {
             "result": {
-              "duration": 9000,
+              "duration": 5500,
               "status": "skipped"
             },
             "match": {
@@ -500,10 +912,10 @@
         "steps": [
           {
             "result": {
-              "duration": 8000,
+              "duration": 5300,
               "status": "skipped"
             },
-            "line": 72,
+            "line": 45,
             "name": "admin clicks on floorplans",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_floorplans()"
@@ -512,23 +924,11 @@
           },
           {
             "result": {
-              "duration": 8100,
+              "duration": 12100,
               "status": "skipped"
             },
-            "line": 73,
-            "name": "Floorplans field is visible",
-            "match": {
-              "location": "addpropertydefination.floorplans_field_is_visible()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8800,
-              "status": "skipped"
-            },
-            "line": 74,
-            "name": "admin enters \"hall\", \"690 sq.feet\", \"Glimpse of hall\"",
+            "line": 46,
+            "name": "admin enters \"hall\", \"690 sq.feet\", \"Glimpse of hall!\"",
             "match": {
               "arguments": [
                 {
@@ -540,7 +940,7 @@
                   "offset": 21
                 },
                 {
-                  "val": "\"Glimpse of hall\"",
+                  "val": "\"Glimpse of hall!\"",
                   "offset": 36
                 }
               ],
@@ -548,10 +948,15 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "name": "@tag3"
+          }
         ]
       },
       {
-        "line": 24,
+        "line": 4,
         "name": "Verify sign in page",
         "description": "",
         "type": "background",
@@ -559,686 +964,56 @@
         "steps": [
           {
             "result": {
-              "duration": 7600,
+              "duration": 6000,
               "status": "skipped"
             },
-            "line": 26,
+            "line": 5,
             "name": "admin is on Real Estate website",
             "match": {
               "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
             },
             "keyword": "Given "
           },
-          {
-            "result": {
-              "duration": 5300,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5000,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5100,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:01.984Z",
-        "before": [
-          {
-            "result": {
-              "duration": 13500,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 90,
-        "name": "Verify Add another floorplan",
-        "description": "",
-        "id": "add-property-feature;verify-add-another-floorplan;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 5100,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 84,
-            "name": "admin clicks on add another editor",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_add_another_editor()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9700,
-              "status": "skipped"
-            },
-            "line": 85,
-            "name": "enters \"balcony\", \"690 sq.feet\", \"Glimpse of balcony\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"balcony\"",
-                  "offset": 7
-                },
-                {
-                  "val": "\"690 sq.feet\"",
-                  "offset": 18
-                },
-                {
-                  "val": "\"Glimpse of balcony\"",
-                  "offset": 33
-                }
-              ],
-              "location": "addpropertydefination.enters(String,String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 13700,
-              "status": "skipped"
-            },
-            "line": 86,
-            "name": "removes that added editor",
-            "match": {
-              "location": "addpropertydefination.removes_that_added_editor()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 8900,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8200,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7700,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 7900,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 7600,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:01.987Z",
-        "before": [
-          {
-            "result": {
-              "duration": 10900,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 92,
-        "name": "Verify Author field",
-        "description": "",
-        "id": "add-property-feature;verify-author-field",
-        "after": [
-          {
-            "result": {
-              "duration": 7000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 7800,
-              "status": "skipped"
-            },
-            "line": 94,
-            "name": "admin selects dropdown menu",
-            "match": {
-              "location": "addpropertydefination.admin_selects_dropdown_menu()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 7500,
-              "status": "skipped"
-            },
-            "line": 95,
-            "name": "admin selects  author name",
-            "match": {
-              "location": "addpropertydefination.admin_selects_author_name()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 14600,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 15300,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10000,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9200,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9200,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:01.990Z",
-        "before": [
-          {
-            "result": {
-              "duration": 10400,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 97,
-        "name": "To verify Discussion feild",
-        "description": "",
-        "id": "add-property-feature;to-verify-discussion-feild",
-        "after": [
-          {
-            "result": {
-              "duration": 9000,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 9900,
-              "status": "skipped"
-            },
-            "line": 98,
-            "name": "admin selects checkbox of discussion",
-            "match": {
-              "location": "addpropertydefination.admin_selects_checkbox_of_discusiion()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 8600,
-              "status": "skipped"
-            },
-            "line": 99,
-            "name": "checkbox is selected",
-            "match": {
-              "location": "addpropertydefination.checkbox_is_selected()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6300,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5600,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4900,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5500,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5000,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:01.993Z",
-        "before": [
-          {
-            "result": {
-              "duration": 23600,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 102,
-        "name": "Automated Verification of Screen Option",
-        "description": "",
-        "id": "add-property-feature;automated-verification-of-screen-option",
-        "after": [
-          {
-            "result": {
-              "duration": 4300,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 4700,
-              "status": "skipped"
-            },
-            "line": 103,
-            "name": "admin clicks on Screen Options",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_Screen_Options()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4600,
-              "status": "skipped"
-            },
-            "line": 104,
-            "name": "admin should see all screen options",
-            "match": {
-              "location": "addpropertydefination.admin_should_see_all_screen_options()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4500,
-              "status": "skipped"
-            },
-            "line": 105,
-            "name": "admin should uncheck the already checked boxes",
-            "match": {
-              "location": "addpropertydefination.admin_should_uncheck_the_already_checked_boxes()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5100,
-              "status": "skipped"
-            },
-            "line": 106,
-            "name": "admin clicks on first radio button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_first_radio_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4900,
-              "status": "skipped"
-            },
-            "line": 107,
-            "name": "admin clicks on second radio button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_second_radio_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4700,
-              "status": "skipped"
-            },
-            "line": 108,
-            "name": "admin selects checkbox",
-            "match": {
-              "location": "addpropertydefination.admin_selects_checkbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4600,
-              "status": "skipped"
-            },
-            "line": 109,
-            "name": "Admin verifies changes are made or not",
-            "match": {
-              "location": "addpropertydefination.admin_verifies_changes_are_made_or_not()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
           {
             "result": {
               "duration": 5800,
               "status": "skipped"
             },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5700,
-              "status": "skipped"
-            },
-            "line": 27,
+            "line": 6,
             "name": "admin clicks on login",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_login()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 5100,
+              "duration": 5300,
               "status": "skipped"
             },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"amit92luthra\"",
+                  "val": "\"mohankrishna176@gmail.com\"",
                   "offset": 22
                 },
                 {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
                 }
               ],
               "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 4600,
+              "duration": 4700,
               "status": "skipped"
             },
-            "line": 29,
+            "line": 8,
             "name": "clicks on Sign in button",
             "match": {
               "location": "addpropertydefination.clicks_on_Sign_in_button()"
@@ -1250,489 +1025,19 @@
               "duration": 4900,
               "status": "skipped"
             },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
+            "line": 9,
+            "name": "admin navigates to dashboard",
             "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
             },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:01.997Z",
-        "before": [
-          {
-            "result": {
-              "duration": 7600,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 145,
-        "name": "Automated verification of Publish field and Update Button",
-        "description": "",
-        "id": "add-property-feature;automated-verification-of-publish-field-and-update-button;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 3700,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 4700,
-              "status": "skipped"
-            },
-            "line": 112,
-            "name": "admin is on Add New page",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Add_New_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4800,
-              "status": "skipped"
-            },
-            "line": 113,
-            "name": "admin enters title of property \"New_launch_View_1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"New_launch_View_1\"",
-                  "offset": 31
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_title_of_property(String)"
-            },
-            "keyword": "And "
+            "keyword": "Then "
           },
           {
             "result": {
               "duration": 4600,
               "status": "skipped"
             },
-            "line": 114,
-            "name": "admin enters text in given field \"New Property\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"New Property\"",
-                  "offset": 33
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_text_in_given_field(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4700,
-              "status": "skipped"
-            },
-            "line": 115,
-            "name": "admin changed heading style",
-            "match": {
-              "location": "addpropertydefination.admin_changed_heading_style()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 4500,
-              "status": "skipped"
-            },
-            "line": 116,
-            "name": "admin aligns text at center",
-            "match": {
-              "location": "addpropertydefination.admin_aligns_text_at_center()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 117,
-            "name": "admin clicks on edit button of status option of Publish Field",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_edit_button_of_status_option_of_Publish_Field()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 118,
-            "name": "admin selects status as Draft from dropdown",
-            "match": {
-              "location": "addpropertydefination.admin_selects_status_as_Draft_from_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5100,
-              "status": "skipped"
-            },
-            "line": 119,
-            "name": "admin clicks on Ok button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_Ok_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5100,
-              "status": "skipped"
-            },
-            "line": 120,
-            "name": "admin clicks on edit of Visibility",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_edit_of_Visibility()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5300,
-              "status": "skipped"
-            },
-            "line": 121,
-            "name": "admin clicks on radio button of visibility option",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_radio_button_of_visibility_option()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5000,
-              "status": "skipped"
-            },
-            "line": 122,
-            "name": "admin clicks on ok",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_ok()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 16300,
-              "status": "skipped"
-            },
-            "line": 123,
-            "name": "admin clicks on edit button of Publish option",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_edit_button_of_Publish_option()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6200,
-              "status": "skipped"
-            },
-            "line": 124,
-            "name": "admin clicks on cancel button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_cancel_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5600,
-              "status": "skipped"
-            },
-            "line": 125,
-            "name": "admin clicks on edit option agian of publish button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_edit_option_agian_of_publish_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5400,
-              "status": "skipped"
-            },
-            "line": 126,
-            "name": "admin selects month from dropdown",
-            "match": {
-              "location": "addpropertydefination.admin_selects_month_from_dropdown()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5400,
-              "status": "skipped"
-            },
-            "line": 127,
-            "name": "admin enters \"14\", \"2021\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"14\"",
-                  "offset": 13
-                },
-                {
-                  "val": "\"2021\"",
-                  "offset": 19
-                }
-              ],
-              "location": "addpropertydefination.admin_enters(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 12500,
-              "status": "skipped"
-            },
-            "line": 128,
-            "name": "clicks on OK",
-            "match": {
-              "location": "addpropertydefination.clicks_on_OK()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5900,
-              "status": "skipped"
-            },
-            "line": 129,
-            "name": "verifies displayed message",
-            "match": {
-              "location": "addpropertydefination.verifies_displayed_message()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3600,
-              "status": "skipped"
-            },
-            "line": 130,
-            "name": "admin clicks on Main Publish button",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_Main_Publish_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3400,
-              "status": "skipped"
-            },
-            "line": 131,
-            "name": "clicks on View_Post",
-            "match": {
-              "location": "addpropertydefination.clicks_on_View_Post()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3300,
-              "status": "skipped"
-            },
-            "line": 132,
-            "name": "admin navigates to post",
-            "match": {
-              "location": "addpropertydefination.admin_navigates_to_post()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 133,
-            "name": "admin navigates to previous page",
-            "match": {
-              "location": "addpropertydefination.admin_navigates_to_previous_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 134,
-            "name": "deletes a letter from title",
-            "match": {
-              "location": "addpropertydefination.deletes_a_letter_from_title()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100,
-              "status": "skipped"
-            },
-            "line": 135,
-            "name": "clicks on update",
-            "match": {
-              "location": "addpropertydefination.clicks_on_update()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6000,
-              "status": "skipped"
-            },
-            "line": 136,
-            "name": "clicks on view post",
-            "match": {
-              "location": "addpropertydefination.clicks_on_view_post()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5500,
-              "status": "skipped"
-            },
-            "line": 137,
-            "name": "navigates to post",
-            "match": {
-              "location": "addpropertydefination.navigates_to_post()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5400,
-              "status": "skipped"
-            },
-            "line": 138,
-            "name": "Navigates back on previous page",
-            "match": {
-              "location": "addpropertydefination.navigates_back_on_previous_page()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6000,
-              "status": "skipped"
-            },
-            "line": 139,
-            "name": "clciks on Add New button",
-            "match": {
-              "location": "addpropertydefination.clciks_on_Add_New_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5400,
-              "status": "skipped"
-            },
-            "line": 140,
-            "name": "admin verifies title field to add new property",
-            "match": {
-              "location": "addpropertydefination.admin_verifies_title_field_to_add_new_property()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 5900,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8500,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 9600,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 8200,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5600,
-              "status": "skipped"
-            },
-            "line": 31,
+            "line": 10,
             "name": "admin hovers on Properties then clciks on Add New field",
             "match": {
               "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
@@ -1742,11 +1047,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-10-14T12:17:02.003Z",
+        "start_timestamp": "2021-10-16T15:33:58.209Z",
         "before": [
           {
             "result": {
-              "duration": 8700,
+              "duration": 7800,
               "status": "skipped"
             },
             "match": {
@@ -1754,10 +1059,10 @@
             }
           }
         ],
-        "line": 160,
-        "name": "Automated verification move to trash link",
+        "line": 63,
+        "name": "Verify Add another floorplan",
         "description": "",
-        "id": "add-property-feature;automated-verification-move-to-trash-link;;2",
+        "id": "add-property-feature;verify-add-another-floorplan;;2",
         "after": [
           {
             "result": {
@@ -1774,10 +1079,1207 @@
         "steps": [
           {
             "result": {
-              "duration": 5200,
+              "duration": 4700,
               "status": "skipped"
             },
-            "line": 148,
+            "line": 57,
+            "name": "admin clicks on add another editor",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_add_another_editor()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4900,
+              "status": "skipped"
+            },
+            "line": 58,
+            "name": "enters \"balcony_view\", \"690 sq.feet\", \"Glimpse of balcony_@mumbai_view\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"balcony_view\"",
+                  "offset": 7
+                },
+                {
+                  "val": "\"690 sq.feet\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Glimpse of balcony_@mumbai_view\"",
+                  "offset": 38
+                }
+              ],
+              "location": "addpropertydefination.enters(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4700,
+              "status": "skipped"
+            },
+            "line": 59,
+            "name": "removes previous editor",
+            "match": {
+              "location": "addpropertydefination.removes_previous_editor()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag4"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8500,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9300,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8600,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7300,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.211Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9500,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Verify Author field",
+        "description": "",
+        "id": "add-property-feature;verify-author-field",
+        "after": [
+          {
+            "result": {
+              "duration": 8300,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 68,
+            "name": "admin selects dropdown menu",
+            "match": {
+              "location": "addpropertydefination.admin_selects_dropdown_menu()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6900,
+              "status": "skipped"
+            },
+            "line": 69,
+            "name": "admin selects  author name",
+            "match": {
+              "location": "addpropertydefination.admin_selects_author_name()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 12200,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9400,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12900,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13700,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.215Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 72,
+        "name": "To verify Discussion field",
+        "description": "",
+        "id": "add-property-feature;to-verify-discussion-field",
+        "after": [
+          {
+            "result": {
+              "duration": 13000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13600,
+              "status": "skipped"
+            },
+            "line": 73,
+            "name": "admin selects checkbox of discussion",
+            "match": {
+              "location": "addpropertydefination.admin_selects_checkbox_of_discusiion()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13900,
+              "status": "skipped"
+            },
+            "line": 74,
+            "name": "checkbox is selected",
+            "match": {
+              "location": "addpropertydefination.checkbox_is_selected()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag6"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4500,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4500,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3700,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6500,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4400,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.219Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15400,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 77,
+        "name": "Automated Verification of Screen Option",
+        "description": "",
+        "id": "add-property-feature;automated-verification-of-screen-option",
+        "after": [
+          {
+            "result": {
+              "duration": 4200,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3800,
+              "status": "skipped"
+            },
+            "line": 78,
+            "name": "admin clicks on Screen Options",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_Screen_Options()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9800,
+              "status": "skipped"
+            },
+            "line": 79,
+            "name": "admin should see all screen options",
+            "match": {
+              "location": "addpropertydefination.admin_should_see_all_screen_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5500,
+              "status": "skipped"
+            },
+            "line": 80,
+            "name": "admin should uncheck the already checked boxes",
+            "match": {
+              "location": "addpropertydefination.admin_should_uncheck_the_already_checked_boxes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5400,
+              "status": "skipped"
+            },
+            "line": 81,
+            "name": "admin clicks on first radio button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_first_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 82,
+            "name": "admin clicks on second radio button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_second_radio_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6300,
+              "status": "skipped"
+            },
+            "line": 83,
+            "name": "admin selects checkbox",
+            "match": {
+              "location": "addpropertydefination.admin_selects_checkbox()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 84,
+            "name": "Admin verifies changes are made or not",
+            "match": {
+              "location": "addpropertydefination.admin_verifies_changes_are_made_or_not()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag7"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6000,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9300,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7200,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5900,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.230Z",
+        "before": [
+          {
+            "result": {
+              "duration": 8300,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 121,
+        "name": "Automated verification of Publish field and Update button",
+        "description": "",
+        "id": "add-property-feature;automated-verification-of-publish-field-and-update-button;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6500,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11700,
+              "status": "skipped"
+            },
+            "line": 88,
+            "name": "admin is on Add New page",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Add_New_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14200,
+              "status": "skipped"
+            },
+            "line": 89,
+            "name": "admin enters title of property \"New_launch_View_1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"New_launch_View_1\"",
+                  "offset": 31
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_title_of_property(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12200,
+              "status": "skipped"
+            },
+            "line": 90,
+            "name": "admin enters text in given field \"Property\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Property\"",
+                  "offset": 33
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_text_in_given_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000,
+              "status": "skipped"
+            },
+            "line": 91,
+            "name": "admin changed heading style",
+            "match": {
+              "location": "addpropertydefination.admin_changed_heading_style()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8600,
+              "status": "skipped"
+            },
+            "line": 92,
+            "name": "admin aligns text at center",
+            "match": {
+              "location": "addpropertydefination.admin_aligns_text_at_center()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8900,
+              "status": "skipped"
+            },
+            "line": 93,
+            "name": "admin clicks on edit button of status option of Publish Field",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_edit_button_of_status_option_of_Publish_Field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 94,
+            "name": "admin selects status as Draft from dropdown",
+            "match": {
+              "location": "addpropertydefination.admin_selects_status_as_Draft_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8600,
+              "status": "skipped"
+            },
+            "line": 95,
+            "name": "admin clicks on Ok button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_Ok_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8300,
+              "status": "skipped"
+            },
+            "line": 96,
+            "name": "admin clicks on edit of Visibility",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_edit_of_Visibility()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7100,
+              "status": "skipped"
+            },
+            "line": 97,
+            "name": "admin clicks on radio button of visibility option",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_radio_button_of_visibility_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7100,
+              "status": "skipped"
+            },
+            "line": 98,
+            "name": "admin clicks on ok",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_ok()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11600,
+              "status": "skipped"
+            },
+            "line": 99,
+            "name": "admin clicks on edit button of Publish option",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_edit_button_of_Publish_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 100,
+            "name": "admin clicks on cancel button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_cancel_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "line": 101,
+            "name": "admin clicks on edit option agian of publish button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_edit_option_agian_of_publish_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7500,
+              "status": "skipped"
+            },
+            "line": 102,
+            "name": "admin selects month from dropdown",
+            "match": {
+              "location": "addpropertydefination.admin_selects_month_from_dropdown()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7700,
+              "status": "skipped"
+            },
+            "line": 103,
+            "name": "admin enters \"18\", \"2021\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"18\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"2021\"",
+                  "offset": 19
+                }
+              ],
+              "location": "addpropertydefination.admin_enters(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7400,
+              "status": "skipped"
+            },
+            "line": 104,
+            "name": "clicks on OK",
+            "match": {
+              "location": "addpropertydefination.clicks_on_OK()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 105,
+            "name": "admin clicks on Main Publish button",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_Main_Publish_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7800,
+              "status": "skipped"
+            },
+            "line": 106,
+            "name": "verifies displayed message",
+            "match": {
+              "location": "addpropertydefination.verifies_displayed_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17600,
+              "status": "skipped"
+            },
+            "line": 107,
+            "name": "clicks on View_Post",
+            "match": {
+              "location": "addpropertydefination.clicks_on_View_Post()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6300,
+              "status": "skipped"
+            },
+            "line": 108,
+            "name": "admin navigates to post",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_post()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5600,
+              "status": "skipped"
+            },
+            "line": 109,
+            "name": "admin navigates to previous page",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_previous_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16100,
+              "status": "skipped"
+            },
+            "line": 110,
+            "name": "deletes a letter from title",
+            "match": {
+              "location": "addpropertydefination.deletes_a_letter_from_title()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8000,
+              "status": "skipped"
+            },
+            "line": 111,
+            "name": "clicks on update",
+            "match": {
+              "location": "addpropertydefination.clicks_on_update()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7700,
+              "status": "skipped"
+            },
+            "line": 112,
+            "name": "clicks on view post",
+            "match": {
+              "location": "addpropertydefination.clicks_on_view_post()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9500,
+              "status": "skipped"
+            },
+            "line": 113,
+            "name": "navigates to post",
+            "match": {
+              "location": "addpropertydefination.navigates_to_post()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7600,
+              "status": "skipped"
+            },
+            "line": 114,
+            "name": "Navigates back on previous page",
+            "match": {
+              "location": "addpropertydefination.navigates_back_on_previous_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8000,
+              "status": "skipped"
+            },
+            "line": 115,
+            "name": "click on Add New button",
+            "match": {
+              "location": "addpropertydefination.click_on_Add_New_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7900,
+              "status": "skipped"
+            },
+            "line": 116,
+            "name": "admin verifies title field to add new property",
+            "match": {
+              "location": "addpropertydefination.admin_verifies_title_field_to_add_new_property()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@tag8"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Verify sign in page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5500,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "admin is on Real Estate website",
+            "match": {
+              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 208300,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "admin clicks on login",
+            "match": {
+              "location": "addpropertydefination.admin_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6500,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"mohankrishna176@gmail.com\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"Secret@123\u0026\u0026\"",
+                  "offset": 63
+                }
+              ],
+              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "clicks on Sign in button",
+            "match": {
+              "location": "addpropertydefination.clicks_on_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5100,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "admin navigates to dashboard",
+            "match": {
+              "location": "addpropertydefination.admin_navigates_to_dashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4500,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "admin hovers on Properties then clciks on Add New field",
+            "match": {
+              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-10-16T15:33:58.239Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10900,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.initialization()"
+            }
+          }
+        ],
+        "line": 138,
+        "name": "Automated verification move to trash link",
+        "description": "",
+        "id": "add-property-feature;automated-verification-move-to-trash-link;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6200,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "addpropertyannotation.close()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4200,
+              "status": "skipped"
+            },
+            "line": 126,
             "name": "admin is on Properties Add New page",
             "match": {
               "location": "addpropertydefination.admin_is_on_Properties_Add_New_page()"
@@ -1786,10 +2288,10 @@
           },
           {
             "result": {
-              "duration": 5600,
+              "duration": 4200,
               "status": "skipped"
             },
-            "line": 149,
+            "line": 127,
             "name": "admin enters \"Mumbai_@_launch\"",
             "match": {
               "arguments": [
@@ -1804,10 +2306,10 @@
           },
           {
             "result": {
-              "duration": 5600,
+              "duration": 4200,
               "status": "skipped"
             },
-            "line": 150,
+            "line": 128,
             "name": "admin clicks on publish",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_publish()"
@@ -1816,10 +2318,10 @@
           },
           {
             "result": {
-              "duration": 5700,
+              "duration": 4200,
               "status": "skipped"
             },
-            "line": 151,
+            "line": 129,
             "name": "admin clicks on move to trash link",
             "match": {
               "location": "addpropertydefination.admin_clicks_on_move_to_trash_link()"
@@ -1828,10 +2330,10 @@
           },
           {
             "result": {
-              "duration": 6300,
+              "duration": 6900,
               "status": "skipped"
             },
-            "line": 152,
+            "line": 130,
             "name": "admin navigates to properties page",
             "match": {
               "location": "addpropertydefination.admin_navigates_to_properties_page()"
@@ -1840,10 +2342,10 @@
           },
           {
             "result": {
-              "duration": 5200,
+              "duration": 5500,
               "status": "skipped"
             },
-            "line": 153,
+            "line": 131,
             "name": "admin navigates to previous page",
             "match": {
               "location": "addpropertydefination.admin_navigates_to_previous_page()"
@@ -1852,10 +2354,10 @@
           },
           {
             "result": {
-              "duration": 10300,
+              "duration": 5200,
               "status": "skipped"
             },
-            "line": 154,
+            "line": 132,
             "name": "alert message appears on screen",
             "match": {
               "location": "addpropertydefination.alert_message_appears_on_screen()"
@@ -1864,10 +2366,10 @@
           },
           {
             "result": {
-              "duration": 5500,
+              "duration": 5700,
               "status": "skipped"
             },
-            "line": 155,
+            "line": 133,
             "name": "admin navigates back again",
             "match": {
               "location": "addpropertydefination.admin_navigates_back_again()"
@@ -1876,311 +2378,20 @@
           },
           {
             "result": {
-              "duration": 5000,
+              "duration": 5100,
               "status": "skipped"
             },
-            "line": 156,
+            "line": 134,
             "name": "admin is again ready to Add New Property on Real Estate website",
             "match": {
               "location": "addpropertydefination.admin_is_again_ready_to_Add_New_Property_on_Real_Estate_website()"
             },
             "keyword": "And "
           }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 6900,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6300,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 10200,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5400,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:02.006Z",
-        "before": [
-          {
-            "result": {
-              "duration": 8300,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
         ],
-        "line": 169,
-        "name": "Bug-After entering title and hitting ENTER  key property get published automatically",
-        "description": "",
-        "id": "add-property-feature;bug-after-entering-title-and-hitting-enter--key-property-get-published-automatically;;2",
-        "after": [
+        "tags": [
           {
-            "result": {
-              "duration": 4500,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5300,
-              "status": "skipped"
-            },
-            "line": 163,
-            "name": "admin is on Add New Property Page",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Add_New_Property_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 164,
-            "name": "enters \"Mumbai_Launch_123\" in Title Box and hits enter",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Mumbai_Launch_123\"",
-                  "offset": 7
-                }
-              ],
-              "location": "addpropertydefination.enters_in_Title_Box_and_hits_enter(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5200,
-              "status": "skipped"
-            },
-            "line": 165,
-            "name": "property gets published automatically",
-            "match": {
-              "location": "addpropertydefination.property_gets_published_automatically()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 24,
-        "name": "Verify sign in page",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 4800,
-              "status": "skipped"
-            },
-            "line": 26,
-            "name": "admin is on Real Estate website",
-            "match": {
-              "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 4100,
-              "status": "skipped"
-            },
-            "line": 27,
-            "name": "admin clicks on login",
-            "match": {
-              "location": "addpropertydefination.admin_clicks_on_login()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3300,
-              "status": "skipped"
-            },
-            "line": 28,
-            "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"amit92luthra\"",
-                  "offset": 22
-                },
-                {
-                  "val": "\"admin@987654321\"",
-                  "offset": 50
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 3200,
-              "status": "skipped"
-            },
-            "line": 29,
-            "name": "clicks on Sign in button",
-            "match": {
-              "location": "addpropertydefination.clicks_on_Sign_in_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3500,
-              "status": "skipped"
-            },
-            "line": 31,
-            "name": "admin hovers on Properties then clciks on Add New field",
-            "match": {
-              "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-            },
-            "keyword": "And "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-10-14T12:17:02.009Z",
-        "before": [
-          {
-            "result": {
-              "duration": 6700,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.initialization()"
-            }
-          }
-        ],
-        "line": 177,
-        "name": "Bug- Null value is getting accepted",
-        "description": "",
-        "id": "add-property-feature;bug--null-value-is-getting-accepted;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 5600,
-              "status": "skipped"
-            },
-            "match": {
-              "location": "addpropertyannotation.close()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 3600,
-              "status": "skipped"
-            },
-            "line": 172,
-            "name": "admin enters \"\" and hits Enter key",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"\"",
-                  "offset": 13
-                }
-              ],
-              "location": "addpropertydefination.admin_enters_and_hits_Enter_key(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 25400,
-              "status": "skipped"
-            },
-            "line": 173,
-            "name": "admin cann preview the post",
-            "match": {
-              "location": "addpropertydefination.admin_cann_preview_the_post()"
-            },
-            "keyword": "Then "
+            "name": "@tag8"
           }
         ]
       }

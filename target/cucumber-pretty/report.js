@@ -7,7 +7,12 @@ formatter.feature({
 formatter.scenarioOutline({
   "name": "Verify Add property Field-Auto",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag1"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on add new page",
@@ -19,10 +24,10 @@ formatter.step({
 });
 formatter.step({
   "name": "url is generated",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.step({
-  "name": "admin clicks on Publish button",
+  "name": "after hitting Enter post gets published automatically",
   "keyword": "Then "
 });
 formatter.examples({
@@ -37,7 +42,17 @@ formatter.examples({
     },
     {
       "cells": [
-        "neral_2"
+        "neral_2#"
+      ]
+    },
+    {
+      "cells": [
+        "neral@city_123"
+      ]
+    },
+    {
+      "cells": [
+        ""
       ]
     }
   ]
@@ -62,7 +77,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -71,8 +86,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -91,6 +106,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -103,7 +128,12 @@ formatter.result({
 formatter.scenario({
   "name": "Verify Add property Field-Auto",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag1"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on add new page",
@@ -116,7 +146,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "clicks on enter title here \"neral_2\"",
+  "name": "clicks on enter title here \"neral_2#\"",
   "keyword": "And "
 });
 formatter.match({
@@ -127,7 +157,7 @@ formatter.result({
 });
 formatter.step({
   "name": "url is generated",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.url_is_generated()"
@@ -136,11 +166,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin clicks on Publish button",
+  "name": "after hitting Enter post gets published automatically",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "addpropertydefination.admin_clicks_on_Publish_button()"
+  "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
 });
 formatter.result({
   "status": "skipped"
@@ -168,7 +198,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -177,8 +207,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -197,6 +227,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -207,13 +247,260 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Verify Add Media",
+  "name": "Verify Add property Field-Auto",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "name": "admin is on add new page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_is_on_add_new_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "clicks on enter title here \"neral@city_123\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.clicks_on_enter_title_here(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "url is generated",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.url_is_generated()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "after hitting Enter post gets published automatically",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Verify sign in page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin is on Real Estate website",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin clicks on login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_clicks_on_login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "clicks on Sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.clicks_on_Sign_in_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin hovers on Properties then clciks on Add New field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify Add property Field-Auto",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag1"
+    }
+  ]
+});
+formatter.step({
+  "name": "admin is on add new page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_is_on_add_new_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "clicks on enter title here \"\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.clicks_on_enter_title_here(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "url is generated",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.url_is_generated()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "after hitting Enter post gets published automatically",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.after_hitting_Enter_post_gets_published_automatically()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.after({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "Verify sign in page",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin is on Real Estate website",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin clicks on login",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_clicks_on_login()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "clicks on Sign in button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.clicks_on_Sign_in_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin hovers on Properties then clciks on Add New field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "Verify Add Media field",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tag2"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on Visual button",
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_Visual_button()"
@@ -253,7 +540,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin click on media library",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_click_on_media_library()"
@@ -263,20 +550,10 @@ formatter.result({
 });
 formatter.step({
   "name": "admin selects all media items drop down menu",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_selects_all_media_items_drop_down_menu()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin clicks on All dates",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_clicks_on_All_dates()"
 });
 formatter.result({
   "status": "skipped"
@@ -301,21 +578,32 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.step({
+  "name": "admin is back on same page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_is_back_on_same_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.after({
   "status": "skipped"
 });
 formatter.scenarioOutline({
   "name": "Verify floorplans",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag3"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on floorplans",
   "keyword": "When "
-});
-formatter.step({
-  "name": "Floorplans field is visible",
-  "keyword": "Then "
 });
 formatter.step({
   "name": "admin enters \"\u003ctitle\u003e\", \"\u003carea\u003e\", \"\u003cdescription\u003e\"",
@@ -337,7 +625,7 @@ formatter.examples({
       "cells": [
         "hall",
         "690 sq.feet",
-        "Glimpse of hall"
+        "Glimpse of hall!"
       ]
     }
   ]
@@ -362,7 +650,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -371,8 +659,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -386,6 +674,16 @@ formatter.step({
 });
 formatter.match({
   "location": "addpropertydefination.clicks_on_Sign_in_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
 });
 formatter.result({
   "status": "skipped"
@@ -403,7 +701,12 @@ formatter.result({
 formatter.scenario({
   "name": "Verify floorplans",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag3"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on floorplans",
@@ -416,17 +719,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "Floorplans field is visible",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.floorplans_field_is_visible()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin enters \"hall\", \"690 sq.feet\", \"Glimpse of hall\"",
+  "name": "admin enters \"hall\", \"690 sq.feet\", \"Glimpse of hall!\"",
   "keyword": "Then "
 });
 formatter.match({
@@ -441,18 +734,23 @@ formatter.after({
 formatter.scenarioOutline({
   "name": "Verify Add another floorplan",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag4"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on add another editor",
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.step({
   "name": "enters \"\u003ctitle\u003e\", \"\u003carea\u003e\", \"\u003cdescription\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "name": "removes that added editor",
+  "name": "removes previous editor",
   "keyword": "Then "
 });
 formatter.examples({
@@ -469,9 +767,9 @@ formatter.examples({
     },
     {
       "cells": [
-        "balcony",
+        "balcony_view",
         "690 sq.feet",
-        "Glimpse of balcony"
+        "Glimpse of balcony_@mumbai_view"
       ]
     }
   ]
@@ -496,7 +794,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -505,8 +803,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -525,6 +823,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -537,11 +845,16 @@ formatter.result({
 formatter.scenario({
   "name": "Verify Add another floorplan",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag4"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on add another editor",
-  "keyword": "Then "
+  "keyword": "When "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_add_another_editor()"
@@ -550,7 +863,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "enters \"balcony\", \"690 sq.feet\", \"Glimpse of balcony\"",
+  "name": "enters \"balcony_view\", \"690 sq.feet\", \"Glimpse of balcony_@mumbai_view\"",
   "keyword": "And "
 });
 formatter.match({
@@ -560,11 +873,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "removes that added editor",
+  "name": "removes previous editor",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "addpropertydefination.removes_that_added_editor()"
+  "location": "addpropertydefination.removes_previous_editor()"
 });
 formatter.result({
   "status": "skipped"
@@ -592,7 +905,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -601,8 +914,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -621,6 +934,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -633,7 +956,12 @@ formatter.result({
 formatter.scenario({
   "name": "Verify Author field",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tag5"
+    }
+  ]
 });
 formatter.step({
   "name": "admin selects dropdown menu",
@@ -678,7 +1006,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -687,8 +1015,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -707,6 +1035,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -717,9 +1055,14 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "To verify Discussion feild",
+  "name": "To verify Discussion field",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tag6"
+    }
+  ]
 });
 formatter.step({
   "name": "admin selects checkbox of discussion",
@@ -764,7 +1107,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -773,8 +1116,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -793,6 +1136,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -805,7 +1158,12 @@ formatter.result({
 formatter.scenario({
   "name": "Automated Verification of Screen Option",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@tag7"
+    }
+  ]
 });
 formatter.step({
   "name": "admin clicks on Screen Options",
@@ -881,9 +1239,14 @@ formatter.after({
   "status": "skipped"
 });
 formatter.scenarioOutline({
-  "name": "Automated verification of Publish field and Update Button",
+  "name": "Automated verification of Publish field and Update button",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag8"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on Add New page",
@@ -954,16 +1317,16 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "verifies displayed message",
-  "keyword": "And "
-});
-formatter.step({
   "name": "admin clicks on Main Publish button",
   "keyword": "And "
 });
 formatter.step({
-  "name": "clicks on View_Post",
+  "name": "verifies displayed message",
   "keyword": "Then "
+});
+formatter.step({
+  "name": "clicks on View_Post",
+  "keyword": "And "
 });
 formatter.step({
   "name": "admin navigates to post",
@@ -994,7 +1357,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "name": "clciks on Add New button",
+  "name": "click on Add New button",
   "keyword": "And "
 });
 formatter.step({
@@ -1017,8 +1380,8 @@ formatter.examples({
     {
       "cells": [
         "New_launch_View_1",
-        "New Property",
-        "14",
+        "Property",
+        "18",
         "2021"
       ]
     }
@@ -1044,7 +1407,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -1053,8 +1416,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -1073,6 +1436,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -1083,9 +1456,14 @@ formatter.result({
   "status": "skipped"
 });
 formatter.scenario({
-  "name": "Automated verification of Publish field and Update Button",
+  "name": "Automated verification of Publish field and Update button",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag8"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on Add New page",
@@ -1108,7 +1486,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters text in given field \"New Property\"",
+  "name": "admin enters text in given field \"Property\"",
   "keyword": "And "
 });
 formatter.match({
@@ -1238,7 +1616,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters \"14\", \"2021\"",
+  "name": "admin enters \"18\", \"2021\"",
   "keyword": "And "
 });
 formatter.match({
@@ -1258,16 +1636,6 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "verifies displayed message",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.verifies_displayed_message()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
   "name": "admin clicks on Main Publish button",
   "keyword": "And "
 });
@@ -1278,8 +1646,18 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "clicks on View_Post",
+  "name": "verifies displayed message",
   "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.verifies_displayed_message()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "clicks on View_Post",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.clicks_on_View_Post()"
@@ -1358,11 +1736,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "clciks on Add New button",
+  "name": "click on Add New button",
   "keyword": "And "
 });
 formatter.match({
-  "location": "addpropertydefination.clciks_on_Add_New_button()"
+  "location": "addpropertydefination.click_on_Add_New_button()"
 });
 formatter.result({
   "status": "skipped"
@@ -1383,7 +1761,12 @@ formatter.after({
 formatter.scenarioOutline({
   "name": "Automated verification move to trash link",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag8"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on Properties Add New page",
@@ -1458,7 +1841,7 @@ formatter.result({
 });
 formatter.step({
   "name": "admin clicks on login",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_clicks_on_login()"
@@ -1467,8 +1850,8 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
+  "name": "admin enters username \"mohankrishna176@gmail.com\" and password \"Secret@123\u0026\u0026\"",
+  "keyword": "And "
 });
 formatter.match({
   "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
@@ -1487,6 +1870,16 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
+  "name": "admin navigates to dashboard",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "addpropertydefination.admin_navigates_to_dashboard()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
   "name": "admin hovers on Properties then clciks on Add New field",
   "keyword": "And "
 });
@@ -1499,7 +1892,12 @@ formatter.result({
 formatter.scenario({
   "name": "Automated verification move to trash link",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag8"
+    }
+  ]
 });
 formatter.step({
   "name": "admin is on Properties Add New page",
@@ -1587,252 +1985,6 @@ formatter.step({
 });
 formatter.match({
   "location": "addpropertydefination.admin_is_again_ready_to_Add_New_Property_on_Real_Estate_website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenarioOutline({
-  "name": "Bug-After entering title and hitting ENTER  key property get published automatically",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "admin is on Add New Property Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "name": "enters \"\u003ctitle\u003e\" in Title Box and hits enter",
-  "keyword": "And "
-});
-formatter.step({
-  "name": "property gets published automatically",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        "Mumbai_Launch_123"
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "Verify sign in page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin is on Real Estate website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin clicks on login",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_clicks_on_login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "clicks on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.clicks_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin hovers on Properties then clciks on Add New field",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Bug-After entering title and hitting ENTER  key property get published automatically",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "admin is on Add New Property Page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_is_on_Add_New_Property_Page()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "enters \"Mumbai_Launch_123\" in Title Box and hits enter",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.enters_in_Title_Box_and_hits_enter(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "property gets published automatically",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.property_gets_published_automatically()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "status": "skipped"
-});
-formatter.scenarioOutline({
-  "name": "Bug- Null value is getting accepted",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "admin enters \"\u003ctitle\u003e\" and hits Enter key",
-  "keyword": "When "
-});
-formatter.step({
-  "name": "admin cann preview the post",
-  "keyword": "Then "
-});
-formatter.examples({
-  "name": "",
-  "description": "",
-  "keyword": "Examples",
-  "rows": [
-    {
-      "cells": [
-        "title"
-      ]
-    },
-    {
-      "cells": [
-        ""
-      ]
-    }
-  ]
-});
-formatter.background({
-  "name": "Verify sign in page",
-  "description": "",
-  "keyword": "Background"
-});
-formatter.before({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin is on Real Estate website",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_is_on_Real_Estate_website()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin clicks on login",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_clicks_on_login()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin enters username \"amit92luthra\" and password \"admin@987654321\"",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_enters_username_and_password(String,String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "clicks on Sign in button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.clicks_on_Sign_in_button()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin hovers on Properties then clciks on Add New field",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_hovers_on_Properties_then_clciks_on_Add_New_field()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.scenario({
-  "name": "Bug- Null value is getting accepted",
-  "description": "",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "name": "admin enters \"\" and hits Enter key",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_enters_and_hits_Enter_key(String)"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.step({
-  "name": "admin cann preview the post",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "addpropertydefination.admin_cann_preview_the_post()"
 });
 formatter.result({
   "status": "skipped"

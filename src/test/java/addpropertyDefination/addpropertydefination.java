@@ -50,7 +50,9 @@ public class addpropertydefination {
 	public void admin_enters_username_and_password(String username, String password) {
 		try {
 		driver.findElement(By.name("log")).sendKeys(username);
+		Thread.sleep(1000);
 		driver.findElement(By.id("user_pass")).sendKeys(password);
+		Thread.sleep(1000);
 		}
 		catch (Exception e)
 		{
@@ -63,6 +65,7 @@ public class addpropertydefination {
 	public void clicks_on_Sign_in_button() {
 		try {
 		driver.findElement(By.name("login")).click();
+		Thread.sleep(3000);
 		}
 		catch (Exception e)
 		{
@@ -71,7 +74,7 @@ public class addpropertydefination {
 	    
 	}
 
-	@Then("admin navigates to dashboard")
+	@And("admin navigates to dashboard")
 	public void admin_navigates_to_dashboard() {
 		try {
 			boolean b = driver.findElement(By.xpath("//h1[text()='Dashboard']")).isDisplayed();
@@ -89,7 +92,7 @@ public class addpropertydefination {
 	}
 	
 	
-	@Then("admin hovers on Properties then clciks on Add New field")
+	@And("admin hovers on Properties then clciks on Add New field")
 	public void admin_hovers_on_Properties_then_clciks_on_Add_New_field() {
 		try {
 			 
@@ -128,8 +131,9 @@ public class addpropertydefination {
 			WebElement obj = driver.findElement(By.name("post_title"));
 					obj.sendKeys(title);
 					Thread.sleep(3000);
-					System.out.println("Neral launch Mumbai" +title);
+					System.out.println("Title of my property is : " +title);
 					obj.sendKeys(Keys.ENTER);
+					Thread.sleep(5000);
 					//obj.click();
 			}
 	    catch (Exception e)
@@ -138,10 +142,10 @@ public class addpropertydefination {
 		//Assert.fail();
 		}
 
-    @Then("url is generated")
+    @And("url is generated")
 	public void url_is_generated() {
     	try {
-    		boolean check1 = driver.findElement(By.xpath("//strong[normalize-space()='Permalink:']")).isDisplayed();
+    		boolean check1 = driver.findElement(By.xpath("//strong[contains(text(),'Permalink:')]")).isDisplayed();
     		
 		System.out.println("Done "+check1);
     	}
@@ -151,6 +155,22 @@ public class addpropertydefination {
     	}
 		
 	}
+    @Then("after hitting Enter post gets published automatically")
+    public void after_hitting_Enter_post_gets_published_automatically() {
+    	
+    	try
+	    {
+	    	boolean linkl = driver.findElement(By.xpath("//a[@class='submitdelete deletion']")).isDisplayed();
+	    	System.out.println("Property published utomatically, it's a bug " +linkl);
+	    	Thread.sleep(3000);
+	    }
+	    catch (Exception e)
+	    {
+	    	System.out.println("Trash Link, can't see! "+e);
+	    	
+	    }
+        
+    }
    /* @Then("admin clicks on Publish button")
 	public void admin_clicks_on_Publish_button() {
 	    try {
@@ -165,7 +185,7 @@ public class addpropertydefination {
 	    }
     }*/
     
-   @Then("admin clicks on Visual button")
+  @Then("admin clicks on Visual button")
     public void admin_clicks_on_Visual_button() {
 	   try 
 	   {
@@ -219,6 +239,7 @@ public class addpropertydefination {
 		try
 		{
 			driver.findElement(By.xpath("//*[text()='Media Library']")).click();
+			Thread.sleep(3000);
 		}
 		catch (Exception e)
 		{
@@ -232,6 +253,7 @@ public class addpropertydefination {
 		try 
 		{
 			Select mediaitem = new Select(driver.findElement(By.xpath("//select[@id='media-attachment-filters']")));
+			Thread.sleep(3000);
 			mediaitem.selectByVisibleText("Images");
 			
 		}
@@ -276,17 +298,32 @@ public class addpropertydefination {
 	   
 	}
 		
+		@Then("admin is back on same page")
+		public void admin_is_back_on_same_page() {
+			try {
+			    boolean a1 = driver.findElement(By.xpath("//button[@id='insert-media-button']")).isDisplayed();
+			    System.out.println("Admin is back on same page " +a1);
+			    }
+			    catch (Exception e)
+			    {
+			    System.out.println("Admin is not on same page! "+e);
+			    }
+		    
+		}
+		
 
 		/*@And("admin verifies image")
 		public void admin_verifies_image() {
-			driver.findElement(By.xpath("//ul[@id='__attachments-view-345']//li[@aria-label='Image1']//div[@class='thumbnail']")).click();
+			try
+			{driver.findElement(By.xpath("//ul[@id='__attachments-view-345']//li[@aria-label='Image1']//div[@class='thumbnail']")).click();
+			}
+			catch(Exception e)
+			{
+			  System.out.println("No image " +e);
+			}
 		}
-		@Then("image is dispayed")
-		public void image_is_dispayed() {
-			System.out.println("Image is displayed on screen");
-		    
-		    
-		}
+		
+		
 		
 		@Then("click on Insert post")
 		public void click_on_Insert_post() {
@@ -339,12 +376,6 @@ public class addpropertydefination {
 		    
 		}
 
-		@Then("Floorplans field is visible")
-		public void floorplans_field_is_visible() throws InterruptedException {
-			System.out.println("it's visible");
-			Thread.sleep(2000);
-		    
-		}
 		
 		@Then("admin enters {string}, {string}, {string}")
 		public void admin_enters(String title, String area, String description) {
@@ -424,11 +455,11 @@ public class addpropertydefination {
 		    }
 		}*/
 
-		@Then("removes that added editor")
-		public void removes_that_added_editor() throws InterruptedException {
+		@Then("removes previous editor")
+		public void removes_previous_editor() throws InterruptedException {
 			
 			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[1]/div[3]/div[1]/div[22]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/div[1]/button[1]")).click();
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 		    System.out.println("Removed editor");
 		}
 		
@@ -437,7 +468,7 @@ public class addpropertydefination {
 		public void admin_selects_dropdown_menu() throws InterruptedException {
 			try {
 			Select author = new Select(driver.findElement(By.xpath("//select[@id='post_author_override']")));
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			author.selectByVisibleText("Indira Shivanna (PreethiKS)");
 			Thread.sleep(3000);
 			}
@@ -464,28 +495,43 @@ public class addpropertydefination {
 				//driver.findElement(By.xpath("//input[@id='comment_status']")).isSelected();
 				WebElement option1 = driver.findElement(By.xpath("//input[@id='comment_status']"));
 				option1.click();
-				if(option1.isSelected())
-					{System.out.println("Check box is selected");
-					}
-					
-				else
-				{
-					System.out.println("checkbox is off");
-				}
-				option1.click();  // it selects checkbox
-				
-				Thread.sleep(5000);
-				System.out.println("its checked now");
-				
 			}
 			catch (Exception e)
 			{
-				System.out.println("Not able to select "+e);
+				System.out.println("Checkbox not selected! " +e);
 			}
+				
+		    
+		}
+		@Then("checkbox is selected")
+		public void checkbox_is_selected() {
+		    try
+		    {
+		    	WebElement option1 = driver.findElement(By.xpath("//input[@id='comment_status']"));
+				option1.click();
+		 
+		    	if(option1.isSelected())
+				{System.out.println("Check box is selected");
+				}
+				
+			else
+			{
+				System.out.println("checkbox is off");
+			}
+			option1.click();  // it selects checkbox
+			
+			Thread.sleep(3000);
+			System.out.println("its checked now");
+			
+		}
+		catch (Exception e)
+		{
+			System.out.println("Not able to select discusiion checkbox "+e);
+		}
 		    
 		}
 		
-		
+		// Screen Options
 		@When("admin clicks on Screen Options")
 		public void admin_clicks_on_Screen_Options() {
 			try
@@ -493,7 +539,7 @@ public class addpropertydefination {
 				if(driver.findElement(By.xpath("//button[@id='show-settings-link']")).getAttribute("aria-expanded")=="false")
 		    		driver.findElement(By.xpath("//button[@id='show-settings-link']")).click();
 				driver.findElement(By.id("show-settings-link")).click();
-				Thread.sleep(9000);
+				Thread.sleep(3000);
 				
 				//driver.findElement(By.xpath("//button[@id='show-settings-link']")).click();
 			}
@@ -581,6 +627,7 @@ public class addpropertydefination {
 			{
 				if(driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).getAttribute("checked")=="false")
 driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).click();
+				Thread.sleep(3000);
 				System.out.println("Admin can click on 2 columns option");
 				
 				
@@ -606,7 +653,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		        // Print message to console
 			System.out.println("Check box of Screen Option is selected");
 		} else {
-			// Click the radio button
+			// Click 
 			check.click();
 		}
 			}
@@ -622,13 +669,13 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			try
 			{
 				boolean a = driver.findElement(By.xpath("//*[@id='regiondiv']/h2/span")).isDisplayed();
-				System.out.println(a);
+				System.out.println("Regions:"+a);
 				
 				boolean b = driver.findElement(By.xpath("//span[normalize-space()='Amenities']")).isDisplayed();
-				System.out.println(b);
+				System.out.println("Ammenities: "+b);
 				
 				boolean c = driver.findElement(By.xpath("//span[normalize-space()='Price Table']")).isDisplayed();
-				System.out.println(c);
+				System.out.println("Price Table:" +c);
 				
 			}
 			catch (Exception e)
@@ -639,7 +686,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		}
 		
 		
-		
+		//Publish Property
 		@Given("admin is on Add New page")
 		public void admin_is_on_Add_New_page() {
 			try {
@@ -723,6 +770,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    	boolean edit1 = driver.findElement(By.xpath("//*[@id='submitdiv']/h2/span")).isDisplayed();
 		    	System.out.println(" Publish Icon is visible " +edit1);
 		    	driver.findElement(By.xpath("//a[@class='edit-post-status hide-if-no-js']//span[@aria-hidden='true'][normalize-space()='Edit']")).click();
+		    	Thread.sleep(3000);
 		    	System.out.println("edit-draft selected");
 		    }
 		    catch (Exception e)
@@ -742,6 +790,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 				Thread.sleep(3000);
 				System.out.println("draft selected");
 				select.selectByValue("pending");
+				Thread.sleep(3000);
 				System.out.println("pending is clicked");
 				Thread.sleep(5000);
 				
@@ -762,6 +811,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			
 			try {
 				driver.findElement(By.xpath("//a[@class='save-post-status hide-if-no-js button']")).click();
+				Thread.sleep(3000);
 			}
 			catch (Exception e)
 			{
@@ -777,6 +827,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    	boolean edit1 = driver.findElement(By.xpath("//*[@id='submitdiv']/h2/span")).isDisplayed();
 		    	System.out.println(" Publish Icon is visible " +edit1);
 		    	driver.findElement(By.xpath("//*[@id='visibility']/a/span[1]")).click();
+		    	Thread.sleep(3000);
 		    }
 		    catch (Exception e)
 		    {
@@ -788,7 +839,8 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		public void admin_clicks_on_radio_button_of_visibility_option() {
 		    try {
 		    	WebElement radio1=driver.findElement(By.xpath("//input[@id='visibility-radio-password']"));
-		    	WebElement radio2 = driver.findElement(By.xpath("//input[@id='visibility-radio-public']"));
+		    	WebElement radio2 = driver.findElement(By.xpath("//input[@id='visibility-radio-private']"));
+		    	WebElement radio3 = driver.findElement(By.xpath("//input[@id='visibility-radio-public']"));
 		    	
 		    	radio1.click();
 		    	Thread.sleep(3000);
@@ -796,11 +848,15 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    	
 		    	radio2.click();
 		    	Thread.sleep(3000);
+		    	System.out.println("Private Radio button is selected");
+		    	
+		    	radio3.click();
+		    	Thread.sleep(3000);
 		    	System.out.println("Public Radio Button is selected");
 		    }
 		    catch(Exception e)
 		    {
-		    	System.out.println("Canot select radio1 or radio2");
+		    	System.out.println("Canot select radio button! " +e);
 		    }
 		    
 		}
@@ -824,6 +880,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			
 			try {	
 		    	driver.findElement(By.xpath("//input[@id='publish']")).click();
+		    	Thread.sleep(3000);
 		    }
 		    catch (Exception e)
 		    {
@@ -935,7 +992,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		
 		
 		
-		@Then("admin clicks on Main Publish button")
+		@And("admin clicks on Main Publish button")
 		public void admin_clicks_on_Main_Publish_button() {
 			
 			try 
@@ -1016,6 +1073,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			try
 			{
 				WebElement text = driver.findElement(By.xpath("//input[@id='title']"));
+				Thread.sleep(3000);
 				text.sendKeys(Keys.BACK_SPACE);
 				Thread.sleep(3000);
 			}
@@ -1083,8 +1141,8 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    }
 		}
 
-		@Then("clciks on Add New button")
-		public void clciks_on_Add_New_button() {
+		@Then("click on Add New button")
+		public void click_on_Add_New_button() {
 		    try
 		    {
 		    	driver.findElement(By.xpath("//a[@class='page-title-action']")).click();
@@ -1109,6 +1167,7 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 		    	
 		    }
 		}
+		// move to trash
 		
 		@Given("admin is on Properties Add New page")
 		public void admin_is_on_Properties_Add_New_page() {

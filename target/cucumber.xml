@@ -1,164 +1,49 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="11" time="0.030299">
-<testcase classname="add property feature" name="Verify Add property Field-Auto" time="0.011337">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Given admin is on add new page..............................................skipped
-And clicks on enter title here "neral_2"....................................skipped
-When url is generated.......................................................skipped
-Then admin clicks on Publish button.........................................skipped
-]]></system-out>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="252.661592">
+<testcase classname="add property feature" name="Verify Add another floorplan" time="200.496038">
+<failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable&#10;  (Session info: chrome=94.0.4606.81)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-EHQ2LNEU', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\Subhash\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a78d1bfd67e2ff6f5226a2f8070f6ee5&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)&#13;&#10;&#9;at addpropertyDefination.addpropertydefination.removes_previous_editor(addpropertydefination.java:461)&#13;&#10;&#9;at ✽.removes previous editor(file:src/test/java/addnewpropertyfeature/addproperty.feature:59)&#13;&#10;"><![CDATA[Given admin is on Real Estate website.......................................passed
+And admin clicks on login...................................................passed
+And admin enters username "mohankrishna176@gmail.com" and password "Secret@123&&".passed
+And clicks on Sign in button................................................passed
+Then admin navigates to dashboard...........................................passed
+And admin hovers on Properties then clciks on Add New field.................passed
+When admin clicks on add another editor.....................................passed
+And enters "balcony_view", "690 sq.feet", "Glimpse of balcony_@mumbai_view".passed
+Then removes previous editor................................................failed
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=94.0.4606.81)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-EHQ2LNEU', ip: '192.168.1.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.81, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: C:\Users\Subhash\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:54026}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a78d1bfd67e2ff6f5226a2f8070f6ee5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at addpropertyDefination.addpropertydefination.removes_previous_editor(addpropertydefination.java:461)
+	at ✽.removes previous editor(file:src/test/java/addnewpropertyfeature/addproperty.feature:59)
+]]></failure>
 </testcase>
-<testcase classname="add property feature" name="Verify Add Media" time="0.007249">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Then admin clicks on Visual button..........................................skipped
-And admin clicks on add media button........................................skipped
-Then Media pop up gets display..............................................skipped
-And admin clicks on upload files............................................skipped
-Then admin click on media library...........................................skipped
-Then admin selects all media items drop down menu...........................skipped
-Then admin clicks on All dates..............................................skipped
-And selects required date...................................................skipped
-And admin clicks on close button............................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Verify floorplans" time="0.001006">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-When admin clicks on floorplans.............................................skipped
-Then Floorplans field is visible............................................skipped
-Then admin enters "hall", "690 sq.feet", "Glimpse of hall"..................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Verify Add another floorplan" time="0.001016">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Then admin clicks on add another editor.....................................skipped
-And enters "balcony", "690 sq.feet", "Glimpse of balcony"...................skipped
-Then removes that added editor..............................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Verify Author field" time="0.000974">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-When admin selects dropdown menu............................................skipped
-Then admin selects  author name.............................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="To verify Discussion feild" time="0.000925">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-When admin selects checkbox of discussion...................................skipped
-Then checkbox is selected...................................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Automated Verification of Screen Option" time="0.001143">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-When admin clicks on Screen Options.........................................skipped
-Then admin should see all screen options....................................skipped
-And admin should uncheck the already checked boxes..........................skipped
-And admin clicks on first radio button......................................skipped
-And admin clicks on second radio button.....................................skipped
-And admin selects checkbox..................................................skipped
-Then Admin verifies changes are made or not.................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Automated verification of Publish field and Update Button" time="0.003247">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Given admin is on Add New page..............................................skipped
-And admin enters title of property "New_launch_View_1"......................skipped
-And admin enters text in given field "New Property".........................skipped
-And admin changed heading style.............................................skipped
-And admin aligns text at center.............................................skipped
-And admin clicks on edit button of status option of Publish Field...........skipped
-And admin selects status as Draft from dropdown.............................skipped
-And admin clicks on Ok button...............................................skipped
-And admin clicks on edit of Visibility......................................skipped
-And admin clicks on radio button of visibility option.......................skipped
-And admin clicks on ok......................................................skipped
-And admin clicks on edit button of Publish option...........................skipped
-And admin clicks on cancel button...........................................skipped
-And admin clicks on edit option agian of publish button.....................skipped
-And admin selects month from dropdown.......................................skipped
-And admin enters "14", "2021"...............................................skipped
-And clicks on OK............................................................skipped
-And verifies displayed message..............................................skipped
-And admin clicks on Main Publish button.....................................skipped
-Then clicks on View_Post....................................................skipped
-And admin navigates to post.................................................skipped
-And admin navigates to previous page........................................skipped
-And deletes a letter from title.............................................skipped
-And clicks on update........................................................skipped
-Then clicks on view post....................................................skipped
-And navigates to post.......................................................skipped
-And Navigates back on previous page.........................................skipped
-And clciks on Add New button................................................skipped
-Then admin verifies title field to add new property.........................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Automated verification move to trash link" time="0.001472">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Given admin is on Properties Add New page...................................skipped
-And admin enters "Mumbai_@_launch"..........................................skipped
-And admin clicks on publish.................................................skipped
-And admin clicks on move to trash link......................................skipped
-Then admin navigates to properties page.....................................skipped
-And admin navigates to previous page........................................skipped
-But alert message appears on screen.........................................skipped
-Then admin navigates back again.............................................skipped
-And admin is again ready to Add New Property on Real Estate website.........skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Bug-After entering title and hitting ENTER  key property get published automatically" time="0.001097">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-Given admin is on Add New Property Page.....................................skipped
-And enters "Mumbai_Launch_123" in Title Box and hits enter..................skipped
-Then property gets published automatically..................................skipped
-]]></system-out>
-</testcase>
-<testcase classname="add property feature" name="Bug- Null value is getting accepted" time="0.000833">
-<system-out><![CDATA[Given admin is on Real Estate website.......................................skipped
-Then admin clicks on login..................................................skipped
-Then admin enters username "amit92luthra" and password "admin@987654321"....skipped
-And clicks on Sign in button................................................skipped
-And admin hovers on Properties then clciks on Add New field.................skipped
-When admin enters "" and hits Enter key.....................................skipped
-Then admin cann preview the post............................................skipped
+<testcase classname="add property feature" name="Verify Author field" time="52.165554">
+<system-out><![CDATA[Given admin is on Real Estate website.......................................passed
+And admin clicks on login...................................................passed
+And admin enters username "mohankrishna176@gmail.com" and password "Secret@123&&".passed
+And clicks on Sign in button................................................passed
+Then admin navigates to dashboard...........................................passed
+And admin hovers on Properties then clciks on Add New field.................passed
+When admin selects dropdown menu............................................passed
+Then admin selects  author name.............................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
