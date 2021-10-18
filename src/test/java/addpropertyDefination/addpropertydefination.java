@@ -170,7 +170,7 @@ public class addpropertydefination {
 	    	boolean linkl = driver.findElement(By.xpath("//a[@class='submitdelete deletion']")).isDisplayed();
 	    	System.out.println("Property published utomatically, it's a bug " +linkl);
 	    	Thread.sleep(3000);
-	    }
+	    	Assert.fail();	    }
 	    catch (Exception e)
 	    {
 	    	System.out.println("Trash Link, can't see! "+e);
