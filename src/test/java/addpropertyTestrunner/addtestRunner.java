@@ -10,10 +10,10 @@ import cucumber.api.junit.Cucumber;
 		features="src/test/java/addnewpropertyfeature"
 		,glue={"addpropertyDefination","addpropertyAnnotation"},
 		//tags= {"@tag4 , @tag5"},
-		dryRun=true, // it executes without browser
+		//dryRun=true, // it executes without browser
 				monochrome=true,
 				
-						plugin={"pretty","html:target/cucumber-pretty","json:target/cucumber.json"}
+						plugin={"pretty","html:target/cucumber-pretty","json:target/cucumber.json","json:target/report.xml"}
 		)
 
 

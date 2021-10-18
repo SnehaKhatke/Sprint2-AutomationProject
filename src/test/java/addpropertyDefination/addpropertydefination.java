@@ -29,6 +29,7 @@ public class addpropertydefination {
 		catch(Exception e)
 		{
 			System.out.println("Not able to get title of Real Estate website "+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -42,6 +43,7 @@ public class addpropertydefination {
 		catch(Exception e)
 		{
 			System.out.println("Admin is unable to login icon" +e);
+			Assert.fail();
 		}
 		}
 	
@@ -57,6 +59,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to enter credentials"+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -70,6 +73,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to login"+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -85,6 +89,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to navigate"+e);
+			Assert.fail();
 			
 		}
 		
@@ -121,6 +126,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Admin is not on Add new Page! "+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -151,7 +157,8 @@ public class addpropertydefination {
     	}
     	catch(Exception e)
     	{
-    		System.out.println("URL is not present! "+e);
+    		System.out.println("URL is not present...bug! "+e);
+    		Assert.fail();
     	}
 		
 	}
@@ -167,23 +174,12 @@ public class addpropertydefination {
 	    catch (Exception e)
 	    {
 	    	System.out.println("Trash Link, can't see! "+e);
+	    	Assert.fail();
 	    	
 	    }
         
     }
-   /* @Then("admin clicks on Publish button")
-	public void admin_clicks_on_Publish_button() {
-	    try {
-	    	//System.out.println(driver.findElement(By.xpath("//*[@id='submitdiv']/button")));
-	    	if(driver.findElement(By.xpath("//*[@id='submitdiv']/button")).getAttribute("aria-expanded")=="false")
-	    		driver.findElement(By.xpath("//*[@id='submitdiv']/button")).click();	
-	    	driver.findElement(By.xpath("//input[@id='publish']")).click();
-	    }
-	    catch (Exception e)
-	    {
-    	System.out.println("Not able to click on publish button"+e);
-	    }
-    }*/
+   
     
   @Then("admin clicks on Visual button")
     public void admin_clicks_on_Visual_button() {
@@ -194,6 +190,7 @@ public class addpropertydefination {
 	   catch (Exception e)
 	   {
 		   System.out.println("Admin is not able to clcik on Visual! "+e);
+		   Assert.fail();
 	   }
 	   }
    
@@ -206,6 +203,7 @@ public class addpropertydefination {
 	    catch (Exception e)
 	    {
 	    System.out.println("Admin unable to clcik on add media button"+e);
+	    Assert.fail();
 	    }
 	}
 
@@ -218,6 +216,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("No any media popup"+e);
+			Assert.fail();
 		}
 	}
 	
@@ -230,6 +229,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Admin is not able to click on upload button");
+			Assert.fail();
 			
 		}
 	}
@@ -244,6 +244,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to click on media library"+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -260,6 +261,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to select"+e);
+			Assert.fail();
 		}
 	    
 	}
@@ -278,6 +280,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Oops Not able to select date"+e);
+			Assert.fail();
 		
 		}
 	    
@@ -292,7 +295,7 @@ public class addpropertydefination {
 			catch (Exception e)
 			{
 				System.out.println("Admin is not able to click on close icon "+e);
-				
+				Assert.fail();
 			}
 			
 	   
@@ -307,6 +310,7 @@ public class addpropertydefination {
 			    catch (Exception e)
 			    {
 			    System.out.println("Admin is not on same page! "+e);
+			    Assert.fail();
 			    }
 		    
 		}
@@ -394,6 +398,7 @@ public class addpropertydefination {
 			catch ( Exception e)
 			{
 				System.out.println("Cannot enter floorplan details"+e);
+				Assert.fail();
 				
 			}
 		    
@@ -415,6 +420,7 @@ public class addpropertydefination {
 			catch (Exception e)
 			{
 				System.out.println("Admin can't click on add another editor" +e);
+				Assert.fail();
 			}
 		    
 		}
@@ -435,32 +441,25 @@ public class addpropertydefination {
 			catch(Exception e)
 			{
 				System.out.println("Can not enter your req. details" +e);
+				Assert.fail();
 			}
 		    
 		}
 
-		/*@Then("admin clicks on add another editor option")
-		public void admin_clicks_on_add_another_editor_option() {
-		    try
-		    {
-		    	driver.findElement(By.xpath("//button[contains(text(),'Add another Editor')]")).click();
-		    	Thread.sleep(2000);
-		    	System.out.println("added editor");
-		    	
-		    }
-		    catch (Exception e)
-		    {
-		    	System.out.println("cant clcik "+e);
-		    	Assert.fail();
-		    }
-		}*/
 
 		@Then("removes previous editor")
 		public void removes_previous_editor() throws InterruptedException {
+			try {
 			
 			driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[2]/div[1]/div[3]/form[1]/div[1]/div[1]/div[3]/div[1]/div[22]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[5]/div[1]/button[1]")).click();
 			Thread.sleep(3000);
 		    System.out.println("Removed editor");
+			}
+			catch(Exception e)
+			{
+				System.out.println("Editor removed! " +e);
+				Assert.fail();
+			}
 		}
 		
 		
@@ -475,6 +474,7 @@ public class addpropertydefination {
 			catch(Exception e)
 			{
 				System.out.println("Admin is unable to select Author");
+				Assert.fail();
 			}
 		    
 		}
@@ -499,6 +499,7 @@ public class addpropertydefination {
 			catch (Exception e)
 			{
 				System.out.println("Checkbox not selected! " +e);
+				Assert.fail();
 			}
 				
 		    
@@ -527,6 +528,7 @@ public class addpropertydefination {
 		catch (Exception e)
 		{
 			System.out.println("Not able to select discusiion checkbox "+e);
+			Assert.fail();
 		}
 		    
 		}
@@ -961,7 +963,10 @@ driver.findElement(By.xpath("//*[@id='adv-settings']/fieldset[2]/label[2]")).cli
 			
 			try
 			{
-				driver.findElement(By.name("jj")).sendKeys(date);
+				WebElement w = driver.findElement(By.name("jj"));
+				w.sendKeys(Keys.BACK_SPACE);
+				w.sendKeys(Keys.BACK_SPACE);
+				w.sendKeys(date);
 				Thread.sleep(3000);
 				driver.findElement(By.name("aa")).click();
 				Thread.sleep(3000);
