@@ -1,0 +1,6 @@
+github_commands
+git init
+git add *
+git commit -m "comments"
+git remote add origin https://github.com/SnehaKhatke/Sprint2-AutomationProject.git
+git push -u origin master
